@@ -131,7 +131,7 @@ async def cb_navg(bot, update: CallbackQuery):
     
     reply_markup = InlineKeyboardMarkup(temp_results)
     text=f"""
-↪️ 𝖱𝖾𝗊𝗎𝖾𝗌𝗍𝖾𝖽 𝖬𝗈𝗏𝗂𝖾: {query}
+💿 𝖱𝖾𝗊𝗎𝖾𝗌𝗍𝖾𝖽 𝖬𝗈𝗏𝗂𝖾: {query}
 🗃️ 𝖳𝗈𝗍𝖺𝗅 𝖥𝗂𝗅𝖾𝗌 : {leng}
 📑 𝖳𝗈𝗍𝖺𝗅 𝖯𝖺𝗀𝖾 : 1/{index_val + 1}/{len(results) if len(results) < max_pages else max_pages}
 👤 𝖱𝖾𝗊𝗎𝖾𝗌𝗍𝖾𝖽 𝖡𝗒 : {update.from_user.mention}"""
@@ -140,7 +140,7 @@ async def cb_navg(bot, update: CallbackQuery):
         imdb = await donlee_imdb(query)
         await update.message.edit_caption(
                 caption=f"""
-↪️ 𝖱𝖾𝗊𝗎𝖾𝗌𝗍𝖾𝖽 𝖬𝗈𝗏𝗂𝖾: {query}
+💿 𝖱𝖾𝗊𝗎𝖾𝗌𝗍𝖾𝖽 𝖬𝗈𝗏𝗂𝖾: {query}
 🎞️ 𝖳𝗂𝗍𝗅𝖾: <a href={imdb['url']}>{imdb.get('title')}
 🎭 𝖦𝖾𝗇𝗋𝖾𝗌: {imdb.get('genres')}
 📆 𝖸𝖾𝖺𝗋: <a href={imdb['url']}/releaseinfo>{imdb.get('year')}</a>
@@ -167,7 +167,7 @@ async def cb_navg(bot, update: CallbackQuery):
               imdb = await donlee_imdb(query)
               await update.message.edit_caption(
                 caption=f"""
-↪️ 𝖱𝖾𝗊𝗎𝖾𝗌𝗍𝖾𝖽 𝖬𝗈𝗏𝗂𝖾: {query}
+💿 𝖱𝖾𝗊𝗎𝖾𝗌𝗍𝖾𝖽 𝖬𝗈𝗏𝗂𝖾: {query}
 🎞️ 𝖳𝗂𝗍𝗅𝖾: <a href={imdb['url']}>{imdb.get('title')}
 🎭 𝖦𝖾𝗇𝗋𝖾𝗌: {imdb.get('genres')}
 📆 𝖸𝖾𝖺𝗋: <a href={imdb['url']}/releaseinfo>{imdb.get('year')}</a>
