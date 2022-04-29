@@ -1072,7 +1072,7 @@ async def cb_max_page(bot, update: CallbackQuery):
         [
             InlineKeyboardButton
                 (
-                    "📰 Pages 📰", callback_data="hi"
+                    "📝 Pages 📝", callback_data="hi"
                 )
         ],
         [
